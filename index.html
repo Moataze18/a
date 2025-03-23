@@ -161,8 +161,8 @@
       }
     }
 
-    document.getElementById('admin-login').addEventListener('click', () => {
-      let pass = prompt('Enter Admin Password:');
+    document.getElementById('admin-login').addEventListener('click', function() {
+      let pass = window.prompt('Enter Admin Password:'); // تأكد من ظهور الـ prompt
       if (pass === '12661') {
         document.getElementById('arabic-controls').style.display = 'block';
         document.getElementById('english-controls').style.display = 'block';
